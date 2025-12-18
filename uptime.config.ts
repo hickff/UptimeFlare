@@ -55,14 +55,15 @@ const workerConfig: WorkerConfig = {
       // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
       // checkProxyFallback: true,
     },
+    { id: 'influxdb_serv00', name: 'influxdb_serv00', method: 'GET', target: 'https://if.ffc.pp.ua/healt', tooltip: 'This is a tooltip for this monitor', statusPageLink: 'https://k.opp.pp.ua', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: 'home_kod_tcp',
+      name: 'Home TCP Monitor',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
+      target: 'kod.ffff.dev.tc:58386',
       tooltip: 'My production server SSH',
       statusPageLink: 'https://example.com',
       timeout: 5000,
@@ -110,25 +111,25 @@ const workerConfig: WorkerConfig = {
 // Also, related downtime notifications will be skipped (if any)
 // Of course, you can leave it empty if you don't need this feature
 
-// const maintenances: MaintenanceConfig[] = []
+const maintenances: MaintenanceConfig[] = []
 
-const maintenances: MaintenanceConfig[] = [
-  {
-    // [Optional] Monitor IDs to be affected by this maintenance
-    monitors: ['foo_monitor', 'bar_monitor'],
-    // [Optional] default to "Scheduled Maintenance" if not specified
-    title: 'Test Maintenance',
-    // Description of the maintenance, will be shown at status page
-    body: 'This is a test maintenance, server software upgrade',
-    // Start time of the maintenance, in UNIX timestamp or ISO 8601 format
-    start: '2020-01-01T00:00:00+08:00',
-    // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
-    // if not specified, the maintenance will be considered as on-going
-    end: '2050-01-01T00:00:00+08:00',
-    // [Optional] color of the maintenance alert at status page, default to "yellow"
-    color: 'blue',
-  },
-]
+// const maintenances: MaintenanceConfig[] = [
+//   {
+//     // [Optional] Monitor IDs to be affected by this maintenance
+//     monitors: ['foo_monitor', 'bar_monitor'],
+//     // [Optional] default to "Scheduled Maintenance" if not specified
+//     title: 'Test Maintenance',
+//     // Description of the maintenance, will be shown at status page
+//     body: 'This is a test maintenance, server software upgrade',
+//     // Start time of the maintenance, in UNIX timestamp or ISO 8601 format
+//     start: '2020-01-01T00:00:00+08:00',
+//     // [Optional] end time of the maintenance, in UNIX timestamp or ISO 8601 format
+//     // if not specified, the maintenance will be considered as on-going
+//     end: '2050-01-01T00:00:00+08:00',
+//     // [Optional] color of the maintenance alert at status page, default to "yellow"
+//     color: 'blue',
+//   },
+// ]
 
 // Don't edit this line
 export { maintenances, pageConfig, workerConfig }
