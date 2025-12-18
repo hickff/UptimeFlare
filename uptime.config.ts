@@ -7,10 +7,10 @@ import { MaintenanceConfig, PageConfig, WorkerConfig } from './types/config'
 
 const pageConfig: PageConfig = {
   // Title for your status page
-  title: "lyc8503's Status Page",
+  title: "Uptime Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/hickff', label: 'GitHub' },
+    { link: 'https://xg.afc.qzz.io', label: 'Xugou' },
     { link: 'https://blog.test.net/', label: 'Blog' },
     { link: 'mailto:me@test.net', label: 'Email Me', highlight: true },
   ],
@@ -55,7 +55,10 @@ const workerConfig: WorkerConfig = {
       // [OPTIONAL] if true, the check will fallback to local if the specified proxy is down
       // checkProxyFallback: true,
     },
-    { id: 'influxdb_serv00', name: 'influxdb_serv00', method: 'GET', target: 'https://if.ffc.pp.ua/healt', tooltip: 'This is a tooltip for this monitor', statusPageLink: 'https://k.opp.pp.ua', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'influxdb_serv00', name: 'influxdb_serv00', method: 'GET', target: 'https://if.ffc.pp.ua/health', tooltip: 'This is a tooltip for this monitor', statusPageLink: 'https://if.ffc.pp.ua/health', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'rd153p1_onrender', name: 'rd153p1_onrender', method: 'GET', target: 'https://rd.afc.qzz.io', tooltip: 'tooltip', statusPageLink: 'https://rd.afc.qzz.io', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'rdapp4_onrender', name: 'rdapp4_onrender', method: 'GET', target: 'https://rdapp4.onrender.com', tooltip: 'tooltip', statusPageLink: 'https://rdapp4.onrender.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'GeminiBalance_onrender', name: 'GeminiBalance_onrender', method: 'GET', target: 'https://gm-bls.onrender.com', tooltip: 'tooltip', statusPageLink: 'https://gm-bls.onrender.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
     // Example TCP Monitor
     {
       id: 'home_kod_tcp',
@@ -65,7 +68,7 @@ const workerConfig: WorkerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: 'kod.ffff.dev.tc:58386',
       tooltip: 'My production server SSH',
-      statusPageLink: 'https://example.com',
+      statusPageLink: 'https://google.com',
       timeout: 5000,
     },
   ],
