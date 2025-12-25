@@ -61,18 +61,26 @@ const workerConfig: WorkerConfig = {
     { id: 'GeminiBalance_onrender', name: 'GeminiBalance_onrender', method: 'GET', target: 'https://gm-bls.onrender.com', tooltip: 'tooltip', statusPageLink: 'https://gm-bls.onrender.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
     { id: 'lu_fffc_lunes', name: 'lu_fffc_lunes', method: 'GET', target: 'https://lu.fffc.eu.org:3015', tooltip: 'tooltip', statusPageLink: 'https://lu.fffc.eu.org:3015', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
     { id: 'lu2_afc_lunes', name: 'lu2_afc_lunes', method: 'GET', target: 'https://lu2.afc.qzz.io:3292', tooltip: 'tooltip', statusPageLink: 'https://lu2.afc.qzz.io:3292', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'bab_JP_axwikqaavxsz', name: 'bab_JP_axwikqaavxsz', method: 'GET', target: 'https://axwikqaavxsz.ap-northeast-1.clawcloudrun.com', tooltip: 'tooltip', statusPageLink: 'https://axwikqaavxsz.ap-northeast-1.clawcloudrun.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'bab_SG_puxyrfzwbrwf', name: 'bab_SG_puxyrfzwbrwf', method: 'GET', target: 'https://puxyrfzwbrwf.ap-southeast-1.clawcloudrun.com', tooltip: 'tooltip', statusPageLink: 'https://puxyrfzwbrwf.ap-southeast-1.clawcloudrun.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'rd1_JP_mipzhqxqnupq', name: 'rd1_JP_mipzhqxqnupq', method: 'GET', target: 'https://mipzhqxqnupq.ap-northeast-1.clawcloudrun.com', tooltip: 'tooltip', statusPageLink: 'https://mipzhqxqnupq.ap-northeast-1.clawcloudrun.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'rd1_SG_pvmnwjvhsnfk', name: 'rd1_SG_pvmnwjvhsnfk', method: 'GET', target: 'https://pvmnwjvhsnfk.ap-southeast-1.clawcloudrun.com', tooltip: 'tooltip', statusPageLink: 'https://pvmnwjvhsnfk.ap-southeast-1.clawcloudrun.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'rd1_SG_omkqqvygbeil_olst', name: 'rd1_SG_omkqqvygbeil_olst', method: 'GET', target: 'https://omkqqvygbeil.ap-southeast-1.clawcloudrun.com', tooltip: 'tooltip', statusPageLink: 'https://omkqqvygbeil.ap-southeast-1.clawcloudrun.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'hic_JP_nasgvijavsvt', name: 'hic_JP_nasgvijavsvt', method: 'GET', target: 'https://nasgvijavsvt.ap-northeast-1.clawcloudrun.com', tooltip: 'tooltip', statusPageLink: 'https://nasgvijavsvt.ap-northeast-1.clawcloudrun.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'hic_US_oqlopqzgwjry', name: 'hic_US_oqlopqzgwjry', method: 'GET', target: 'https://oqlopqzgwjry.us-west-1.clawcloudrun.com', tooltip: 'tooltip', statusPageLink: 'https://oqlopqzgwjry.us-west-1.clawcloudrun.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
+    { id: 'hic_US_rvbjvhgubypb', name: 'hic_US_rvbjvhgubypb', method: 'GET', target: 'https://rvbjvhgubypb.us-east-1.clawcloudrun.com', tooltip: 'tooltip', statusPageLink: 'https://rvbjvhgubypb.us-east-1.clawcloudrun.com', expectedCodes: [200], timeout: 10000, headers: {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',},},
     // Example TCP Monitor
-    {
-      id: 'home_kod_tcp',
-      name: 'Home TCP Monitor',
-      // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
-      // `target` should be `host:port` for tcp monitors
-      target: 'kod.ffff.dev.tc:58386',
-      tooltip: 'My production server SSH',
-      statusPageLink: 'https://google.com',
-      timeout: 5000,
-    },
+    //{
+    //  id: 'home_kod_tcp',
+    //  name: 'Home TCP Monitor',
+    //  // `method` should be `TCP_PING` for tcp monitors
+    //  method: 'TCP_PING',
+    //  // `target` should be `host:port` for tcp monitors
+    //  target: 'kod.ffff.dev.tc:58386',
+    //  tooltip: 'tcp port test',
+    //  statusPageLink: 'https://google.com',
+    //  timeout: 5000,
+    //},
   ],
   // [Optional] Notification settings
   notification: {
